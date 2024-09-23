@@ -1,0 +1,28 @@
+Html
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاركة الفيديوهات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مشاركة الفيديوهات 
+          Awad Salim Video Sharing</h1>
+
+        <form id="uploadForm">
+            <label for="videoUpload">رفع فيديو:</label>
+            <input type="file" id="videoUpload" accept="video/*">
+            <button type="button" id="uploadButton">رفع الفيديو</button>
+        </form>
+
+        <h2>الفيديوهات المحملة:</h2>
+        <div id="videoList"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

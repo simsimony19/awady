@@ -1,0 +1,17 @@
+document.getElementById("uploadButton").addEventListener("click", function () {
+    const videoInput = document.getElementById("videoUpload");
+    const videoList = document.getElementById("videoList");
+
+    if (videoInput.files.length > 0) {
+        const file = videoInput.files[0];
+        const videoURL = URL.createObjectURL(file);
+
+        const videoElement = document.createElement("video");
+        videoElement.src = videoURL;
+        videoElement.controls = true;
+
+        videoList.appendChild(videoElement);
+    } else {
+        alert("يرجى اختيار فيديو أولاً!");
+    }
+});
